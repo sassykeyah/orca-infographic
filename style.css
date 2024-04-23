@@ -1,1 +1,83 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
 
+header {
+    background-color: #005A8D;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.large-box {
+    flex-basis: 60%;
+}
+
+.medium-box {
+    flex-basis: 30%;
+}
+
+.small-box {
+    flex-basis: 100%;
+}
+
+.blue-box {
+    background-color: #005A8D;
+    color: #fff;
+}
+
+.green-box {
+    background-color: #00A8A8;
+    color: #fff;
+}
+
+.teal-box {
+    background-color: #6DA9D9;
+    color: #fff;
+}
+
+footer {
+    background-color: #005A8D;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+/* Small devices (up to 768px) */
+@media (max-width: 768px) {
+    .box {
+        flex-basis: 100%; /* Full width for all boxes on small devices */
+    }
+}
+
+/* Medium/large devices (769px and above) */
+@media (min-width: 769px) {
+    .large-box {
+        flex-basis: 60%;
+    }
+    .medium-box {
+        flex-basis: 30%;
+    }
+    .small-box {
+        flex-basis: 100%; /* Full width for small-box on medium/large devices */
+    }
+}
